@@ -1,4 +1,26 @@
-# Bifidelity Boosted Quadrature Sampling
+# Bi-fidelity Boosted Quadrature Sampling
+
+This repo contains code for our paper 
+> N. Cheng, O. A. Malik, Y. Xu, S. Becker, A. Doostan, A. Narayan.
+> *Quadrature Sampling of Parametric Models with Bi-fidelity Boosting*.
+> **arXiv preprint arXiv:2209.05705**,
+> 2022.
+
+The paper is available at [arXiv](https://arxiv.org/abs/2209.05705).
+
+## Referencing this code
+
+If you use this code in any of your own work, please reference our paper:
+```
+@misc{cheng2022quadrature,
+      title={Quadrature Sampling of Parametric Models with Bi-fidelity Boosting}, 
+      author={Nuojin Cheng and Osman Asif Malik and Yiming Xu and Stephen Becker and Alireza Doostan and Akil Narayan},
+      year={2022},
+      eprint={2209.05705},
+      archivePrefix={arXiv},
+      primaryClass={math.NA}
+}
+```
 
 ## Description of code
 
