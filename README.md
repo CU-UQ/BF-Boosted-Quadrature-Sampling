@@ -25,13 +25,15 @@ If you use this code in any of your own work, please reference our paper:
 ## Description of code
 
 ### Main files
-- **cavity\_flow\_bifidelity\_HC.m:** Codes generate boosted quadrature sampling results for cavity flow data;
+- **cavity\_flow\_bifidelity\_TD/cavity\_flow\_bifidelity\_HC.m:** Codes solving boosted quadrature sampling results for cavity flow data in total degree/hyperbolic cross space;
 
-- **beam\_bifidelity\_HC:** Codes generate boosted quadrature sampling results for beam data;
+- **beam\_bifidelity\_TD/beam\_bifidelity\_HC:** Codes solving boosted quadrature sampling results for beam data in total degree/hyperbolic space;
 
-### Sampling functions for <ins>hyperbolic cross</ins> polynomial spaces 
+### Sampling functions 
 
-- **hyperbolic\_cross\_sampling.m:** This function samples and solve the least square problem with many different sampling options. The function utilizes the tensor structure and solves sampled least square problems with less time. The sampling methods provided are uniform sampling and leverage score sampling. 
+- **hyperbolic\_cross\_sampling.m:** This function samples and solves the least square problem with many different sampling options. The function utilizes the tensor structure and solves sampled least square problems with less time. The sampling methods provided are uniform sampling and leverage score sampling. 
+
+- **hyperbolic\_cross\_sampling.m:** Same with above, but in the total degree space;
 
 - **det\_rejection\_sampling.m:** This function allows sampling according to leveraged volume sampling. This is done via the determinantal rejection sampling algorith in *[Derezinski et al., arXiv:1802.06749, 2018]*. Moreover, it is implemented to allow both boosted and unboosted sampling for both unstructured and Kronecker structured matrices.
 
@@ -48,3 +50,17 @@ If you use this code in any of your own work, please reference our paper:
 - **my\_legendre\_1d.m:** This function generates 1d Gauss-Legendre node between -1 and 1;
 
 - **mu.m:** This function computes optimality coefficient of the given sketching and QoI vector b.
+
+### Plot functions
+
+- **synthetic_experiment_fig1.py:** Codes generating Figure 1;
+- **synthetic_experiment_fig2.py:** Codes generating Figure 2;
+- **plot.py:** Codes generating Figure 5 and Figure 9;
+- **cor_plot.py:** Codes generating Figure 4 and Figure 8.
+
+### Data
+
+- **cavity\_flow\_dataset:** Cavity flow data for Section 4.2.1;
+- **X.mat/Y.mat:** Composite beam data for Section 4.2.2.
+
+

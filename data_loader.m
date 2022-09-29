@@ -7,7 +7,6 @@ function [xn, wn, y_LF, y_HF, problem_dim] = data_loader(dataset)
 
 switch dataset
     case "2d_cavity_flow"
-        %load("cavity_flow_dataset/2d_cavity_flow/Uc_tensor_product_grid_size_16.mat", 'Uc')
         load("cavity_flow_dataset/2d_cavity_flow/Uc_tp_grid_2d_size_16_N_40.mat", 'Uc')
         y_LF = mean(Uc, 1).';
         load("cavity_flow_dataset/2d_cavity_flow/Uc_tp_grid_2d_size_128_N_40.mat", 'Uc')

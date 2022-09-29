@@ -157,5 +157,8 @@ for tr = 1:no_trials
         err_lev_vol_boosted(tr) = norm(A*x_sol - yH)/norm(yH);
     tr
 end
- 
+
+% save computation results
+save('B_no_18_HC.mat','err_exact','err_QR','err_lev_score','err_lev_score_boosted','err_unif','err_unif_boosted','err_lev_vol','err_lev_vol_boosted');
+save('B_Cor_no_18_HC.mat','corr_lev','corr_unif','corr_lev_vol');
  

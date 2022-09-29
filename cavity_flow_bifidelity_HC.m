@@ -2,7 +2,6 @@ data = "2d_cavity_flow";
 
 % Load bifidelity data
 [xn, wn, y_LF, y_HF, D] = data_loader(data);
-
 N = length(xn);
 J = 4;
 left_end_pt = -1;
@@ -48,7 +47,7 @@ err_exact = norm(A*x_sol - yH)/norm(yH);
 toc_exact = toc(my_tic);
 
 % Sampling setup
-no_samp = 20;%round(2*size(A,2));
+no_samp = 20;
 no_trials = 100;
 t_alev = zeros(no_trials,1);
 resamp = 10;
@@ -164,3 +163,7 @@ for tr = 1:no_trials
     err_lev_vol_boosted(tr) = norm(A*x_sol - yH)/norm(yH);
     tr
 end
+
+% save computation results
+save('C_no_20_HC.mat','err_exact','err_QR','err_lev_score','err_lev_score_boosted','err_unif','err_unif_boosted','err_lev_vol','err_lev_vol_boosted');
+save('C_Cor_no_20_HC.mat','corr_lev','corr_unif','corr_lev_vol');
