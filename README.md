@@ -53,10 +53,10 @@ If you use this code in any of your own work, please reference our paper:
 
 ### Plot functions
 
-- **synthetic_experiment_fig1.py:** Codes generating Figure 1;
-- **synthetic_experiment_fig2.py:** Codes generating Figure 2;
-- **plot.py:** Codes generating Figure 5 and Figure 9;
-- **cor_plot.py:** Codes generating Figure 4 and Figure 8.
+- **synthetic\_experiment\_fig1.py:** Codes generating Figure 1;
+- **synthetic\_experiment\_fig2.py:** Codes generating Figure 2;
+- **cor\_plot.py:** Codes generating Figure 4 and Figure 8;
+- **plot.py:** Codes generating Figure 5 and Figure 9.
 
 ### Data
 
@@ -64,3 +64,6 @@ If you use this code in any of your own work, please reference our paper:
 - **X.mat/Y.mat:** Composite beam data for Section 4.2.2.
 
 
+## Instructions for creating plots
+For Figure 1 and Figure 2, simply run the codes in synthetic\_experiment\_fig1/fig2.py. For Figures 4,5,8,9, we should run codes in cavity\_flow\_bifidelity\_TD, cavity\_flow\_bifidelity\_HC.m, beam\_bifidelity\_TD, and beam\_bifidelity\_HC to generate data, and then run plotting functions in cor\_plot.py/plot.py to attain figures. 
+Note that the algorithms are random, so the figure of code result won't be exactly same with what the paper presents.
