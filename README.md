@@ -33,7 +33,7 @@ If you use this code in any of your own work, please reference our paper:
 
 - **hyperbolic\_cross\_sampling.m:** This function samples and solves the least square problem with many different sampling options. The function utilizes the tensor structure and solves sampled least square problems with less time. The sampling methods provided are uniform sampling and leverage score sampling. 
 
-- **hyperbolic\_cross\_sampling.m:** Same with above, but in the total degree space;
+- **total\_degree\_sampling.m:** Same with above, but in the total degree space;
 
 - **det\_rejection\_sampling.m:** This function allows sampling according to leveraged volume sampling. This is done via the determinantal rejection sampling algorith in *[Derezinski et al., arXiv:1802.06749, 2018]*. Moreover, it is implemented to allow both boosted and unboosted sampling for both unstructured and Kronecker structured matrices.
 
