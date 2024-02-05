@@ -3,6 +3,7 @@
 This repo contains code for our paper 
 > N. Cheng, O. A. Malik, Y. Xu, S. Becker, A. Doostan, A. Narayan.
 > *Quadrature Sampling of Parametric Models with Bi-fidelity Boosting*.
+> SIAM/ASA Journal on Uncertainty Quantification, *to appear*.
 > **arXiv preprint arXiv:2209.05705**,
 > 2022.
 
@@ -12,10 +13,11 @@ The paper is available at [arXiv](https://arxiv.org/abs/2209.05705).
 
 If you use this code in any of your own work, please reference our paper:
 ```
-@misc{cheng2022quadrature,
+@article{cheng2022quadrature,
       title={Quadrature Sampling of Parametric Models with Bi-fidelity Boosting}, 
       author={Nuojin Cheng and Osman Asif Malik and Yiming Xu and Stephen Becker and Alireza Doostan and Akil Narayan},
-      year={2022},
+      journal={SIAM/ASA Journal on Uncertainty Quantification},
+      year={2024},
       eprint={2209.05705},
       archivePrefix={arXiv},
       primaryClass={math.NA}
