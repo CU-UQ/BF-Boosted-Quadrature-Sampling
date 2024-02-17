@@ -70,11 +70,12 @@ y = yH;
 qr_time = ceil(no_samp/col);
 samp_list = ones(col*qr_time,1);
 A_temp = A;
+IX = 1:no_rows;
 for i = 1:qr_time
-    [~, ~, perm_vec] = qr(A_temp.', 0);
-    samp = perm_vec(1:col);
+    [~, ~, perm_vec] = qr(A_temp[IX]', 0);
+    samp = IX[perm_vec(1:col)];
     samp_list((i-1)*col+1:i*col) = samp';
-    A_temp(samp,:) = [];
+    IX = setdiff(IX, samp);
 end
 samp = samp_list(1:no_samp);
 x_sol = A(samp,:) \ yH(samp);
